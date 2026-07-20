@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gestion des produits</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <h2>📦 Gestion des produits</h2>
+  <div class="menu">
+    <a href="index.html">🏠 Accueil</a>
+    <a href="admin.html">➕ Ajouter</a>
+    <button onclick="deconnexion()">🚪 Déconnexion</button>
+  </div>
+</nav>
+
+<h1>Liste des produits</h1>
+
+<div class="stats">
+
+  <div class="stat">
+    <h2 id="nbProduits">0</h2>
+    <p>Produits</p>
+  </div>
+
+  <div class="stat">
+    <h2 id="nbCategories">0</h2>
+    <p>Catégories</p>
+  </div>
+
+</div>
+
+<div id="listeProduits"></div>
+
+<script src="gestion.js"></script>
+
+<script>
+if (localStorage.getItem("admin") !== "oui") {
+  window.location.href = "login.html";
+}
+</script>
+
+</body>
+</html>

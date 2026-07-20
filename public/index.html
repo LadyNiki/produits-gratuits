@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Produits Gratuits</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <h2>🆓 Produits Gratuits</h2>
+
+  <div class="menu">
+    <a href="index.html">🏠 Accueil</a>
+    <a href="favoris.html">❤️ Favoris</a>
+    <a href="apropos.html">ℹ️ À propos</a>
+    <a href="login.html">🔑 Admin</a>
+  </div>
+</nav>
+
+<header>
+  <h1>Trouvez les meilleurs produits gratuits</h1>
+
+  <input
+    type="text"
+    id="search"
+    placeholder="🔍 Rechercher un produit..."
+  >
+
+<select id="tri">
+  <option value="nom">🔤 Trier par nom</option>
+  <option value="categorie">📂 Trier par catégorie</option>
+</select>
+</header>
+
+<section class="categories">
+
+  <button onclick="filtrerCategorie('Tous')">Tous</button>
+<button onclick="filtrerCategorie('Électronique')">📱 Électronique</button>
+<button onclick="filtrerCategorie('Mode')">👕 Mode</button>
+<button onclick="filtrerCategorie('Maison')">🏠 Maison</button>
+<button onclick="filtrerCategorie('Jeux')">🎮 Jeux</button>
+<button onclick="filtrerCategorie('Livres')">📚 Livres</button>
+
+</section>
+
+<main>
+  <div id="products"></div>
+</main>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

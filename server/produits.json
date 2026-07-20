@@ -1,0 +1,30 @@
+[
+  {
+    "nom": "Télévision",
+    "categorie": "Électronique",
+    "prix": "Gratuit",
+    "image": "https://via.placeholder.com/150",
+    "lien": "https://example.com"
+  },
+  {
+    "nom": "Test",
+    "categorie": "Électronique",
+    "prix": "Gratuit",
+    "image": "https://via.placeholder.com/150",
+    "lien": "https://example.com"
+  },
+  {
+    "nom": "Casque bluetooth",
+    "categorie": "Électronique",
+    "prix": "Gratuit",
+    "image": "https://via.placeholder.com/150",
+    "lien": "https://example.com"
+  },
+  {
+    "nom": "Chaussures de sport",
+    "categorie": "Mode",
+    "prix": "Promotion",
+    "image": "https://via.placeholder.com/150",
+    "lien": "https://example.com"
+  }
+]

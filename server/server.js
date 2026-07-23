@@ -3,6 +3,7 @@ const cors = require("cors");
 const fs = require("fs");
 const path = require("path");
 const multer = require("multer");
+const { pool, initialiserBase } = require("./database");
 
 const app = express();
 
@@ -123,6 +124,12 @@ app.delete("/api/produits/:id", (req, res) => {
 
 const PORT = process.env.PORT || 3000;
 
-app.listen(PORT, () => {
-  console.log(`Serveur lancé sur http://127.0.0.1:${PORT}`);
-});
+initialiserBase()
+  .then(() => {
+    app.listen(PORT, () => {
+      console.log(`Serveur lancé sur le port ${PORT}`);
+    });
+  })
+  .catch((err) => {
+    console.error("Erreur PostgreSQL :", err);
+  });
